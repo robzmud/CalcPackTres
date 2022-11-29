@@ -1,3 +1,5 @@
+import CalcPackDos
+
 public struct CalcPackTres {
     public private(set) var text = "Hello, World!"
 

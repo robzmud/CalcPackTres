@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "calcpackdos",
+      "kind" : "remoteSourceControl",
+      "location" : "https://bitbucket.org/phxroberts/calcpackdos.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bc519540202e36c36fd942dd85845ab59c6262b8"
+      }
+    },
+    {
       "identity" : "sqlite.swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/stephencelis/SQLite.swift.git",

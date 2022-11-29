@@ -14,14 +14,18 @@ let package = Package(
     dependencies: [
       .package(
         url: "https://github.com/stephencelis/SQLite.swift.git",
-        .upToNextMinor(from: "0.13.1"))
+        .upToNextMinor(from: "0.13.1")),
+      .package(url: "https://bitbucket.org/phxroberts/calcpackdos.git", branch: "master")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "CalcPackTres",
-            dependencies: []),
+            dependencies: [
+                .product(name: "CalcPackDos", package: "CalcPackDos"),
+                .product(name: "SQLite", package: "SQLite.swift")
+            ]),
         .testTarget(
             name: "CalcPackTresTests",
             dependencies: ["CalcPackTres"]),
