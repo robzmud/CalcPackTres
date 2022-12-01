@@ -1,3 +1,3 @@
 # CalcPackTres
 
-A description of this package.
+Testing swift package dependencies
