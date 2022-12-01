@@ -15,7 +15,8 @@ let package = Package(
       .package(
         url: "https://github.com/stephencelis/SQLite.swift.git",
         .upToNextMinor(from: "0.13.1")),
-      .package(url: "https://bitbucket.org/phxroberts/calcpackdos.git", branch: "master")
+        .package(url: "https://github.com/robzmud/CalcPackDos.git", branch: "master")
+//      .package(url: "https://bitbucket.org/phxroberts/calcpackdos.git", branch: "master")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
